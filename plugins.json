@@ -1,0 +1,42 @@
+[
+    {
+        "iconUrl": "",
+        "fileHash": "sha256-9cc8108272a35e208d61799746abd9b08733db516ef890613f85cf4b2bedd905",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/watermelon108/TestPlugins",
+        "fileSize": 7829,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "watermelon108"
+        ],
+        "tvTypes": [
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "BlenderPractice",
+        "description": "Blender open movies",
+        "url": "https://raw.githubusercontent.com/watermelon108/TestPlugins/builds/BlenderPractice.cs3",
+        "name": "BlenderPractice"
+    },
+    {
+        "iconUrl": "",
+        "fileHash": "sha256-56c080de1e6456a57638148e0b3cc3d11cacf032a48e867bed948fc47335a3c4",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/watermelon108/TestPlugins",
+        "fileSize": 13292,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "watermelon108"
+        ],
+        "tvTypes": [
+            "Anime"
+        ],
+        "version": 1,
+        "internalName": "ExampleProvider",
+        "description": "Jikan practice: anime search and details",
+        "url": "https://raw.githubusercontent.com/watermelon108/TestPlugins/builds/ExampleProvider.cs3",
+        "name": "ExampleProvider"
+    }
+]

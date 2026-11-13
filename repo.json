@@ -1,0 +1,8 @@
+{
+  "name": "Jikan Practice Repo",
+  "description": "Practice provider",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/watermelon108/TestPlugins/builds/plugins.json"
+  ]
+}
