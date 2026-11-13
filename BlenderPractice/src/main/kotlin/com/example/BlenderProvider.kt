@@ -20,10 +20,13 @@ class BlenderProvider : MainAPI() {
             .map { href -> href.trimEnd('/') to (mainUrl + href) }
     }
 
-    // Folder ke andar se pehli .mp4 file ka link
+    // Folder ke andar se pehli video file ka link (mp4, mkv ya webm)
     private suspend fun findMp4(folderUrl: String): String? {
         val doc = Jsoup.parse(app.get(folderUrl).text)
-        val file = doc.select("a[href$=.mp4]").firstOrNull()?.attr("href") ?: return null
+        val file = doc.select("a[href]")
+            .map { it.attr("href") }
+            .firstOrNull { it.endsWith(".mp4") || it.endsWith(".mkv") || it.endsWith(".webm") }
+            ?: return null
         return if (file.startsWith("http")) file else folderUrl + file
     }
 
